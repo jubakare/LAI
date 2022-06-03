@@ -7,6 +7,7 @@ from datetime import datetime, timedelta
 import requests
 from operator import itemgetter
 import os
+from flask_compress import Compress
 
 # FLASK FORM THAT VALIDATES
 from flask_wtf import FlaskForm
