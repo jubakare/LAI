@@ -20,7 +20,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ["SK"]
+app.config['SECRET_KEY'] = os.getenv("SK")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 engine = create_engine('sqlite:///appointments-database.db', connect_args={'check_same_thread': False})
 Session = sessionmaker(bind=engine, autoflush=False)
@@ -29,12 +29,12 @@ Base = declarative_base()
 Base.query = session.query_property()
 Bootstrap(app)
 year = datetime.now().year
-admin_key = os.environ["AK"]
+admin_key = os.getenv("AK")
 
 
 
 # CALENDLY API
-calendly_access_token = os.environ["CAT"]
+calendly_access_token = os.getenv("CAT")
 
 #Getting Organizational URI
 # header = {
@@ -42,7 +42,7 @@ calendly_access_token = os.environ["CAT"]
 # }
 # response = requests.get("https://api.calendly.com/users/me", headers=header).json()
 # print(response)
-calendly_organization_uri = os.environ["COURI"]
+calendly_organization_uri = os.getenv("COURI")
 
 # Creating Webhook on https://developer.calendly.com/api-docs/c1ddc06ce1f1b-create-webhook-subscription
 
@@ -65,7 +65,7 @@ calendly_header = {
 # BULK SMS API
 
 bsms_url = 'https://www.bulksmsnigeria.com/api/v1/sms/create'
-bsms_token = os.environ["BSMST"]
+bsms_token = os.getenv("BSMST")
 
 bsms_headers = {
   'Content-Type': 'application/json',
