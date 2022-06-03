@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "header.html" %}
+<body>
+  <div class="admin-container">
+    <h2>Upcoming Phone Call Appointments</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Time</th>
+          <th scope="col">Name</th>
+          <th scope="col">Number</th>
+          <th scope="col">Message</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {% for pa in upcoming_pa %}
+          <tr>
+            <th scope="row">{{ pa.appointment_date }}</th>
+            <td>{{ pa.appointment_time }}</td>
+            <td>{{ pa.client_name }}</td>
+            <td>{{ pa.client_phone }}</td>
+            <td class="message"><p>{{ pa.message }}</p></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+
+    </table>
+  </div>
+
+{% include "footer.html" %}
+</body>
+</html>

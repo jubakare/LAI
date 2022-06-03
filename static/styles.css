@@ -1,0 +1,595 @@
+* {
+        margin: 0;
+        padding: 0;
+}
+
+.admin-container {
+        padding-top: 5%;
+        text-align: center;
+}
+.admin-container h2 {
+        font-weight: 500;
+        margin-top: 20px;
+
+}
+
+.admin-container h4 {
+        margin: auto !important;
+        font-size: 24px;
+}
+
+
+.admin-container .row .col-sm-6, #admin-container .row .col-12{
+        padding: 0 50px;
+}
+
+.admin-container a {
+        margin-top: 70px;
+        color: white;
+        text-decoration: none;
+        background-color: #AC8F08;
+        font-size: 20px;
+        padding: 20px;
+}
+.admin-container a:hover {
+            background-color: #D4AC2B;
+}
+
+.message p {
+        max-width: 300px;
+        max-height: 40px !important;
+        overflow-y: scroll;
+        margin: auto;
+}
+
+.admin-container .table {
+        margin: 20px 0 100px 0;
+}
+
+
+body{
+        font-family: 'Maven Pro', sans-serif;
+        margin: auto;
+        padding-top: 107px;
+}
+
+#cta {
+        padding: 6% 20%;
+        margin: auto;
+        text-align: center;
+}
+
+#cta-container {
+        padding: 0 3% !important;
+}
+
+#cta h2 {
+        letter-spacing: 6px;
+        color: white;
+        font-size: 2.625rem;
+
+
+}
+
+#cta p {
+        color: white;
+        font-size: 0.875rem;
+        letter-spacing: 2px;
+        padding: 40px 0;
+}
+
+#featured-listings {
+        padding-left: 3%;
+        padding-right: 3%;
+}
+
+
+#featured-listings .row {
+        margin: auto !important;
+        padding: 0 !important;
+
+}
+
+#featured-listings .row .col-lg-3 {
+        margin-bottom: 20px;
+}
+
+#fl-button {
+        text-align: center;
+}
+#fl-button button {
+        padding: 10px 70px !important;
+
+}
+
+.fl-div {
+        display: table-cell;
+        vertical-align: bottom;
+        padding-left: 5px;
+}
+
+.fl-div h2 {
+        color: white;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+
+
+}
+
+.fl-div p {
+        color: white;
+        font-size: 1rem;
+}
+
+footer {
+        margin: 10% 0 0 0;
+        padding: 5% 3% 1% 3%;
+        text-align: center;
+        align-items: center;
+        background-color: #AC8F08;
+        color: white;
+
+}
+
+footer button {
+        border: none;
+        background-color: rgba(0,0,0,0);
+        margin: 0 7px;
+        margin-bottom: 20px;
+        color: white !important;
+}
+
+
+
+
+.mapouter{position:relative;text-align:right;height:100px;width:300px;margin: auto;opacity:0.7;padding-bottom:5px;}
+.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:500px;}
+
+footer h2 {
+        font-size: 1rem;
+        font-weight: 600;
+        padding-bottom: 4px;
+
+
+}
+footer .row .col-lg-4 {
+        margin-bottom: 20px;
+}
+
+footer .row .col-lg-4 p a{
+        color: white;
+        text-decoration: none;
+}
+
+.col-sm-4, .col-sm-2 {
+        margin: auto;
+}
+#header {
+    font-weight: 700;
+    font-family: 'Cabin', sans-serif;
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.fa-solid {
+    aria-hidden: true;
+    color: #AC8F08;
+}
+
+.form {
+        text-align: center;
+        margin: 1% 0 5% 0;
+}
+
+#key {
+        border-radius: 0;
+}
+
+.help-block {
+        color: red;
+        margin: auto;
+        text-align: center;
+}
+
+.form-group {
+    text-align: center;
+    padding: 0 30%;
+
+}
+
+#login {
+        border: 1px solid #AC8F08;
+        margin-top: 10px;
+        padding: 0 30px 0 30px;
+        border-radius: 0;
+}
+
+#login:hover {
+        color: white;
+        background-color: #AC8F08;
+}
+
+#img-slide {
+        margin: auto;
+        padding-left: 3%;
+        padding-right: 3%;
+}
+
+.img-slide-a {
+        text-decoration: none;
+}
+
+#img-slide-cta {
+        margin: auto;
+        text-align: center;
+}
+
+#img-slide-cta h3 {
+        letter-spacing: 3px;
+        font-size: 1.125rem;
+        color: black !important;
+}
+
+#img-slide-cta button {
+        color: #AC8F08;
+        background-color: white;
+        border: none;
+        margin-bottom: 15px;
+
+}
+
+#img-slide .img-slide-img {
+        height: 250px;
+}
+
+#logo {
+        vertical-align: middle;
+}
+
+nav {
+        padding: 0 3%;
+
+}
+
+
+.navbar-brand {
+    height: 90px;
+
+}
+
+.navbar-nav {
+        text-align: center;
+}
+
+#nav-cta {
+        border: 1px solid #AC8F08;
+
+}
+
+#nav-cta:hover {
+        color: white !important;
+        background-color: #AC8F08;
+}
+
+.nav-link {
+    color: black !important;
+    font-weight: 100 !important;
+    margin: 0 15px;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none!important;
+    border: none!important;
+    box-shadow: none!important;
+}
+
+#news-logos .col-4 {
+        margin: auto;
+        align-items: center;
+}
+
+#section-2 {
+    padding: 10% 3%;
+    text-align: center;
+}
+
+#section-2 #bridget {
+    margin-bottom: 10%;
+
+}
+
+#section-2 #bridget img {
+    min-width: 475px;
+    min-height: 400px;
+    margin: auto;
+    display: block;
+}
+
+#section-2 #bridget div {
+    text-align: justify !important;
+    margin: auto ;
+
+}
+
+#section-2 #bridget h3 {
+    margin-bottom: 25px;
+    font-family: 'Maven Pro', sans-serif;
+    letter-spacing: 4px;
+    font-size: 2rem;
+}
+
+#section-2 #bridget p {
+        margin-bottom: 25px;
+}
+
+#section-2 #bridget button, #featured-listings button {
+    background-color: rgba(0,0,0,0);
+    padding: 10px 35px;
+    border: 2px solid #AC8F08;
+    letter-spacing: 2px;
+}
+
+#section-2 #bridget button:hover, #featured-listings button:hover {
+            color: white;
+            background-color: #AC8F08
+}
+
+#section-2 img {
+        width:130px;
+        margin: 10px 3px;
+}
+
+#section-2 #media {
+        text-align: left;
+        padding: 70px 70px 0px 0px;
+}
+
+#section-2 #media .onq-youtube-player {
+        display: block;
+        margin: auto !important;
+        max-width: 500px;
+        height: 280px;
+        position: relative;
+        left: 70px;
+
+}
+
+#section-2 #media div h2 {
+        font-family: 'Maven Pro', sans-serif;
+        letter-spacing: 4px;
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+
+}
+
+#section-2 #media div p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+
+}
+
+#section-2 #media #media-text {
+        border: 2px solid #AC8F08;
+        padding: 90px 30px 90px 90px;
+        margin: auto !important;
+        align-items: center !important;
+}
+
+#section-2 #media .col-lg-7 button {
+        color: #AC8F08;
+        background-color: white;
+        width: 46px;
+        height: 46px;
+        border: 1px solid #AC8F08;
+        border-radius: 50%;
+        padding: 7px;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+
+}
+
+#section-2 #media .col-lg-7 button:hover {
+        color: white;
+        background-color: #AC8F08;
+}
+
+#section-2 .newspaper {
+        font-family: 'Maven Pro', sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 1rem;
+}
+
+#section-2 #press h2, #fl-h2, #neighborhoods h2{
+        letter-spacing: 6px;
+        font-size: 1.875rem;
+        margin-bottom: 30px;
+        text-align: center;
+}
+
+#section-2 #press #press-quote {
+    margin: auto;
+    padding: 0 50px 30px 50px;
+}
+
+#section-2 #press .news {
+        color: #858585!important;
+        font-style: italic;
+        font-size: 0.875rem;
+        font-family: 'Maven Pro', sans-serif;
+}
+
+#section-2 #press #news-logos {
+        margin: auto;
+
+}
+
+
+#section-2 #press section {
+        height: 200px;
+        margin: auto;
+        text-align: center;
+
+
+}
+
+#stats {
+        padding: 10% 3%;
+        text-align: center;
+}
+#stats h2 {
+        font-weight: 500;
+        color: #AC8F08;
+        font-size: 2.5rem;
+        line-height: 1;
+}
+
+#sub-header {
+        line-height: 1.5;
+        font-size: 1.125rem;
+        letter-spacing: 2px;
+
+}
+
+#title {
+        height: 400px;
+        margin: auto;
+        text-align: center;
+
+}
+
+#title-button, #cta button {
+        font-size: 0.875rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-shadow: none;
+        font-family: 'Lato', sans-serif;
+        min-height: 56px;
+        background-color: #AC8F08;
+        color: white !important;
+        padding: 20px 30px;
+        border-style: none;
+
+}
+
+#title-button:hover, #cta button:hover {
+        background-color: #D4AC2B;
+}
+
+#title-contents {
+        padding: 120px 0;
+}
+
+.title-text {
+        color: white;
+
+}
+
+
+
+
+@media (max-width: 991px) {
+
+
+        .navbar-nav {
+                margin: auto;
+                text-align: center;
+        }
+
+        #header {
+                font-size: 3.5rem;
+        }
+
+        #sub-header {
+                font-size: 1.25rem;
+        }
+
+        #title-button {
+                font-size: 0.875rem;
+                padding: 15px 20px;
+                font-weight: 600;
+        }
+
+        #section-2 #bridget img {
+                min-width: 450px;
+                width: 100%;
+        }
+
+        #section-2 #bridget button {
+                margin-bottom: 35px;
+        }
+
+        #section-2 #press section {
+                height: 130px;
+        }
+
+        #section-2 #media {
+                text-align: center;
+                padding: 70px 0 0 0;
+                padding-left: 3%;
+                padding-right: 3%;
+        }
+
+        #section-2 #media .onq-youtube-player {
+                left: 0;
+                margin: auto;
+                max-width: 90% !important;
+                height: 280px;
+                margin-bottom: 25px !important;
+        }
+
+        #section-2 #media #media-text {
+        border: none;
+        padding: 0 50px;
+        text-align: center;
+
+        }
+
+        #media-buttons {
+                display: inline-block;
+        }
+
+        #cta {
+                padding: 6% 14%;
+        }
+
+        #cta h2 {
+                letter-spacing: 4px;
+                font-size: 2.25rem;
+        }
+
+        #stats h2 {
+                font-size: 1.5rem;
+        }
+
+        #stats p {
+                font-size: 0.875rem;
+        }
+
+        #img-slide .img-slide-img {
+                height: 150px;
+        }
+
+
+
+}
+
+@media (max-width: 540px) {
+        #section-2 #media .onq-youtube-player {
+                height: 185px;
+        }
+}
+
+@media (max-width: 768px) {
+
+        #img-slide .col-6 {
+                display: none;
+        }
+}

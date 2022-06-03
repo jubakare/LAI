@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+    {% include "header.html" %}
+
+    <body>
+
+
+
+
+      <section class="title">
+        <div class="container-fluid">
+
+
+        </div>
+
+        <section id="title" style="background-image: url({{ url_for('static', filename='images/image (3).png') }}); image-rendering: -webkit-optimize-contrast; image-rendering: auto; image-rendering: crisp-edges; image-rendering: pixelated;background-repeat: no-repeat; background-size: cover; background-position: center">
+            <div id="title-contents">
+                <h1 class="title-text" id="header">LEKKI AJAH IKOYI</h1>
+                <h2 class="title-text" id="sub-header">REAL ESTATE AND INVESTMENT</h2>
+                <a href="{{ url_for('book_appointment') }}"><button class="title-text" id="title-button">BOOK AN APPOINTMENT</button></a>
+            </div>
+        </section>
+      </section>
+
+      <section id="section-2">
+          <div class="row" id="bridget">
+              <div class="col-lg-6">
+                  <h3>TOP LAGOS CITY <br> REAL ESTATE AGENT</h3>
+                  <p>Bridget Adeyemi, CEO of Lekki Ajah Ikoyi Property Investment Ltd. has an unshakable reputation of integrity, dedication and consistency in the real estate market and the communities she serves. She actively operates in the real estate businesses at the highest level in Lekki, Ajah, Ikoyi in Lagos city, Nigeria.<br>By taking you - and all her clients - as her number one priority, and being careful in her disposition towards you, she has been able to consistently deliver to the market needs and thus rewarded with multiple recognition in the industry.</p>
+                  <a href="#bridget"><button>LEARN MORE</button></a>
+              </div>
+              <div class="col-lg-6"><img src="{{ url_for('static', filename='images/bridget.png') }}" ></div>
+
+          </div>
+
+          <div id="press">
+                <h2>PRESS AND MEDIA</h2>
+
+                <div class="row" id="press-quote">
+                    <div class="col-lg-4 col-md-4">
+                        <p class="news">"Lekki Ajah Ikoyi Property Investment Ltd., as its name suggests, is a leading real estate marketer of land and property in the highbrow areas of Lekki, Ajah and Ikoyi."</p>
+                        <p class="newspaper">- INDEPENDENT NEWSPAPER NIGERIA</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <p class="news">"The Adeyemis have taken their company to the height of property marketing winning in the process the 2018 Young Entrepreneurs Award for Best Real Estate Marketing Company and 2020 GMYT Academy Award for Real Estate."</p>
+                        <p class="newspaper">- THE NATION NEWSPAPER</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <p class="news">"Lekki Ajah Ikoyi Property Investment Limited is the leading real estate marketing company in Nigeria with the highest number of Instagram followers"</p>
+                        <p class="newspaper">- THE GUARDIAN NIGERIA NEWS</p>
+                    </div>
+                </div>
+              <section class="row" id="news-logo-bg" style="background-image: url({{ url_for('static', filename='images/image (9).png') }}); background-repeat: no-repeat; background-size: cover; background-position: center">
+
+                <div class="row" id="news-logos">
+                    <div class="col-lg-2 col-4">
+                      <img src="{{ url_for('static', filename='images/vanguard_logo.png') }}">
+                    </div>
+                    <div class="col-lg-2 col-4">
+                      <img src="{{ url_for('static', filename='images/telegraph_logo.png') }}">
+                    </div>
+                    <div class="col-lg-2 col-4">
+                      <img src="{{ url_for('static', filename='images/independent_logo.png') }}">
+                    </div>
+                    <div class="col-lg-2 col-4">
+                      <img src="{{ url_for('static', filename='images/thenation_logo.png') }}">
+                    </div>
+                    <div class="col-lg-2 col-4">
+                      <img src="{{ url_for('static', filename='images/guardian_logo.png') }}">
+                    </div>
+                    <div class="col-lg-2 col-4">
+                      <img src="{{ url_for('static', filename='images/sun_logo.png') }}">
+                    </div>
+                </div>
+              </section>
+          </div>
+
+          <div id="media" class="row">
+                <div class='onq-youtube-player col-lg-5' style=' display: block; position: relative; cursor: pointer; overflow: hidden;' data-id='M7UzTS0Dobc' data-width='480' data-height='280' data-ssv='false' data-spc='false' data-sta='false' data-afs='false' data-dkc='false' data-ecc='false' data-eap='false'><img src="{{ url_for('static', filename='images/media.jpg') }}" style='display: block; left: 0; margin: auto; width: 100%; height: 100%; position: absolute; right: 0;'><div style='height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url("https://www.onqmarketing.com.au/wp-content/plugins/onq-youtube-embed-generator/playbutton.png") no-repeat; background-size: 72px;'></div></div>
+              <div class="col-lg-7" id="media-text">
+                <h2>FEATURED VIDEO:<br>TAKING A CLIENT ON AN INSPECTION</h2>
+                <p>Follow us on social media for the most exclusive real estate photos and videos from our luxurious property listings in lekki, Ajah and Ikoyi.</p>
+                  <div id="media-buttons"><a href="https://facebook.com/lekkiajahikoyiproperties"><button><i class="fa fa-brands fa-facebook-f"></i></button></a> <a href="https://www.instagram.com/lekkiajahikoyi"><button><i class="fa fa-brands fa-instagram"></i></button></a> <a href="https://www.linkedin.com/in/bridget-adeyemi-23044ab6"><button><i class="fa fa-brands fa-linkedin-in"></i></button></a> <a href="https://www.youtube.com/channel/UCTlI-a7CI5teYDeTm2Q1n7g/videos"><button><i class="fa fa-brands fa-youtube"></i></button></a></div>
+              </div>
+          </div>
+
+      </section>
+
+      <section id="featured-listings">
+          <h2 id="fl-h2">FEATURED LISTINGS</h2>
+          <div class="row" style>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                  <div class="fl-div" style="width:506px; height:500px; background-position: center; background-size: cover; background-image: url({{ url_for('static', filename='images/featured-listing-1.png') }});">
+                      <h2>LEKKI COUNTY, LAGOS, NIGERIA</h2>
+                      <p>₦150,000,000 | 5 Beds</p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                  <div class="fl-div" style="width:506px; height:500px; background-position: center; background-size: cover; background-image: url({{ url_for('static', filename='images/featured-listing-3.png') }}); background-size: cover">
+                      <h2>IKOTA, LEKKI, LAGOS, NIGERIA</h2>
+                      <p> ₦120,000,000 | 5 Beds</p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                  <div class="fl-div" style="width:506px; height:500px; background-position: center; background-size: cover; background-image: url({{ url_for('static', filename='images/featured-listing-2.png') }}); background-size: cover">
+                      <h2>AJAH LEKKI, LAGOS, NIGERIA</h2>
+                      <p>₦130,000,000 | 5 Beds</p>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                  <div class="fl-div" style="width:506px; height:500px; background-position: center; background-size: cover; background-image: url({{ url_for('static', filename='images/featured-listing-4.png') }}); background-size: cover">
+                      <h2>AJAH LEKKI, LAGOS, NIGERIA</h2>
+                      <p>₦130,000,000 | 5 Beds</p>
+                  </div>
+              </div>
+          </div>
+
+          <div id="fl-button"><a href="https://www.instagram.com/lekkiajahikoyi"><button>VIEW MORE</button></a></div>
+
+      </section>
+
+      <section id="stats">
+
+          <div class="row">
+              <div class="col-md-3 col-6">
+                  <h2>XX</h2>
+                  <p>YEARS OF EXPERIENCE</p>
+              </div>
+              <div class="col-md-3 col-6">
+                  <h2>XX</h2>
+                  <p>PEOPLE TEAM</p>
+              </div>
+              <div class="col-md-3 col-6">
+                  <h2>XX</h2>
+                  <p>RESIDENTIAL UNITS SOLD</p>
+              </div>
+              <div class="col-md-3 col-6">
+                  <h2>XX</h2>
+                  <p>COMMERCIAL UNITS SOLD</p>
+              </div>
+          </div>
+      </section>
+
+      <section id="cta-container">
+          <div id="cta" style="min-height: 420px; background-position: center; background-size: cover; background-image: url({{ url_for('static', filename='images/cta 2.png') }}); background-size: cover">
+                <h2>WORK WITH US</h2>
+                <p>We serve our clients with the highest level of integrity and provide them with the greatest value on every deal.<br>
+                <br>Our active involvement at the top level of the real estate businesses in these Lekki, Ajah and Ikoyi has always helped us in finding exclusive deals for our clients, resulting in almost ₦XX billion of closed real estate transaction in the last XX years.</p>
+                <div><a href="{{ url_for('book_appointment') }}"><button>BOOK AN APPOINTMENT</button></a></div>
+          </div>
+      </section>
+
+      <section id="img-slide" class="row">
+         <a  id="img-slide-cta" class="col-md-3 col-4 img-slide-a" href="https://www.instagram.com/lekkiajahikoyi/">
+            <div>
+                <button><i class="fa fa-2x fa-brands fa-instagram"></i></button>
+                <h3>FOLLOW US ON INSTAGRAM</h3>
+            </div>
+         </a>
+        <a href="https://www.instagram.com/p/CcV_hdFrGBD/" class="col-md-2 col-4 img-slide-img" style="background-position: center; background-size: cover; background-image: url({{ url_for('static', filename='images/img-slide-1.jpg') }});"></a>
+
+        <a href="https://www.instagram.com/p/Cc2-uKJtXLR/" class="col-md-2 col-4 img-slide-img" style="background-position: center; background-size: cover; background-image: url({{ url_for('static', filename='images/img-slide-2.jpg') }});"></a>
+        <a href="https://www.instagram.com/p/Cd-6RrktNDz/" class="col-md-2 col-6 img-slide-img" style="background-position: center; background-size: cover; background-image: url({{ url_for('static', filename='images/img-slide-4.jpg') }});"></a>
+        <a href="https://www.instagram.com/p/CdVq3XLASAb/" class="col-md-3 col-6 img-slide-img" style="background-position: center; background-size: cover; background-image: url({{ url_for('static', filename='images/img-slide-5.png') }});"></a>
+      </section>
+
+      {% include "footer.html" %}
+
+
+      <script>!function(){for(var t=document.getElementsByClassName("onq-youtube-player"),e=0;e<t.length;e++)t[e].onclick=function(){var t=document.createElement("iframe"),e="true"==this.dataset.ssv?"1":"0",s="true"==this.dataset.spc?"1":"0",i="true"==this.dataset.sta?"1":"0",a="true"==this.dataset.dkc?"1":"0",r="true"==this.dataset.ecc?"1":"0",o="true"==this.dataset.eap?"1":"0";for(t.setAttribute("src","//www.youtube.com/embed/"+this.dataset.id+"?rel="+e+"&controls="+s+"&showinfo="+i+"&disablekb="+a+"&cc_load_policy="+r+"&autoplay="+o),t.setAttribute("frameborder","0"),t.setAttribute("id","youtube-iframe"),t.setAttribute("style","width: 100%; height: 100%; position: absolute; top: 0; left: 0;"),"true"==this.dataset.afs&&t.setAttribute("allowfullscreen","");this.firstChild;)this.removeChild(this.firstChild);this.appendChild(t)}}();</script>
+    </body>
+</html>

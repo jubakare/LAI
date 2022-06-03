@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "header.html" %}
+<body>
+  <div class="admin-container">
+    <h2>Upcoming In-Person Appointments</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Time</th>
+          <th scope="col">Name</th>
+          <th scope="col">Number</th>
+          <th scope="col">Message</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {% for ipa in upcoming_ipa %}
+          <tr>
+            <th scope="row">{{ ipa.appointment_date }}</th>
+            <td>{{ ipa.appointment_time }}</td>
+            <td>{{ ipa.client_name }}</td>
+            <td>{{ ipa.client_phone }}</td>
+            <td class="message"><p>{{ ipa.message }}</p></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+
+    </table>
+  </div>
+
+{% include "footer.html" %}
+</body>
+</html>

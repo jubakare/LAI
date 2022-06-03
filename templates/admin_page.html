@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "header.html" %}
+<body>
+    <div class="admin-container">
+        <h2>WELCOME TO THE ADMIN DASHBOARD!</h2>
+
+
+
+        <div class="row">
+            <div class="col-sm-6">
+                <a class="row" href="{{ url_for('upcoming_phone_appointments') }}">
+                    <div class="col-12">{{ upcoming_pa_len }} </div>
+                    <div class="col-12"> Upcoming Phone Call Appointments</div>
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <a class="row" href="{{ url_for('upcoming_inperson_appointments') }}">
+                    <div class="col-12">{{ upcoming_ipa_len }} </div>
+                    <div class="col-12"> Upcoming In-Person Appointments</div>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-6">
+                <a class="row" href="{{ url_for('all_appointments') }}">
+                    <div class="col-12">All Appointments</div>
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <a class="row" href="{{ url_for('all_invitees') }}">
+                    <div class="col-12">All Invitees</div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+{% include "footer.html" %}
+</body>
+</html>
