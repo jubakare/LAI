@@ -6,6 +6,7 @@ from flask_bootstrap import Bootstrap
 from datetime import datetime, timedelta
 import requests
 from operator import itemgetter
+import os
 
 # FLASK FORM THAT VALIDATES
 from flask_wtf import FlaskForm
@@ -20,7 +21,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '89SEKurz93Ji5PtcA1hOtFnB3g46YyU2'
+app.config['SECRET_KEY'] = os.environ["SK"]
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 engine = create_engine('sqlite:///appointments-database.db', connect_args={'check_same_thread': False})
 Session = sessionmaker(bind=engine, autoflush=False)
@@ -29,20 +30,20 @@ Base = declarative_base()
 Base.query = session.query_property()
 Bootstrap(app)
 year = datetime.now().year
-print(datetime.now())
+admin_key = os.environ["AK"]
 
 
 
 # CALENDLY API
-# calendly_access_token = "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2F1dGguY2FsZW5kbHkuY29tIiwiaWF0IjoxNjU0MTgzNDUzLCJqdGkiOiIyMWFhMjU0Mi1lNzA4LTQ0NmUtOTI0ZC00NjIwOTE5NWM4NTYiLCJ1c2VyX3V1aWQiOiJiNGNiYzFmNS1iMWRlLTQ3NGEtOTJjNS1iNjc5MWIwOGZmODgifQ._2iACddAbjpu9dxpKNCYxTZlflumldCYA87RXTgjpbo"
+calendly_access_token = os.environ["CAT"]
 
 #Getting Organizational URI
 # header = {
-#     "authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2F1dGguY2FsZW5kbHkuY29tIiwiaWF0IjoxNjU0MTgzNDUzLCJqdGkiOiIyMWFhMjU0Mi1lNzA4LTQ0NmUtOTI0ZC00NjIwOTE5NWM4NTYiLCJ1c2VyX3V1aWQiOiJiNGNiYzFmNS1iMWRlLTQ3NGEtOTJjNS1iNjc5MWIwOGZmODgifQ._2iACddAbjpu9dxpKNCYxTZlflumldCYA87RXTgjpbo"
+#     "authorization": f"Bearer {calendly_access_token}"
 # }
 # response = requests.get("https://api.calendly.com/users/me", headers=header).json()
 # print(response)
-organization_uri = "https://api.calendly.com/organizations/39a4ab6b-9e91-404b-9129-fb745652a6da"
+calendly_organization_uri = os.environ["COURI"]
 
 # Creating Webhook on https://developer.calendly.com/api-docs/c1ddc06ce1f1b-create-webhook-subscription
 
@@ -59,14 +60,13 @@ organization_uri = "https://api.calendly.com/organizations/39a4ab6b-9e91-404b-91
 
 calendly_header = {
     "Content-Type": "application/json",
-    "authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2F1dGguY2FsZW5kbHkuY29tIiwiaWF0IjoxNjU0MTgzNDUzLCJqdGkiOiIyMWFhMjU0Mi1lNzA4LTQ0NmUtOTI0ZC00NjIwOTE5NWM4NTYiLCJ1c2VyX3V1aWQiOiJiNGNiYzFmNS1iMWRlLTQ3NGEtOTJjNS1iNjc5MWIwOGZmODgifQ._2iACddAbjpu9dxpKNCYxTZlflumldCYA87RXTgjpbo"
+    "authorization": f"Bearer {calendly_access_token}"
 }
 
 # BULK SMS API
 
 bsms_url = 'https://www.bulksmsnigeria.com/api/v1/sms/create'
-bsms_token = "20NIW0yQ0ssYaqKQQlSEI2gSkr3xOHHBsNPzys9Lv25elywxwG4StbNKlR5Y"
-bridget_no = "23481434664"
+bsms_token = os.environ["BSMST"]
 
 bsms_headers = {
   'Content-Type': 'application/json',
@@ -168,9 +168,8 @@ def webhook():
 
             #SEND REMINDER TO BRIDGET
             # brem_params = {
-            #     'user': 'jubril',
-            #     'password': 'jubrilBSMS',
-            #     'mobile': '08143466411',
+            #     'user': 'i',,
+            #     'mobile': 'm',
             #     'senderid': 'Appointment',
             #     'message': f'Reminder: {event_name} with {name}, {text_reminder_to} at {event_time}.',
             #     'schedule': '2022:06:02:18:35:00'
@@ -339,7 +338,7 @@ def admin():
         if form.validate_on_submit() and form.key.data != "secret&$LAI!key":
             incorrect_password = True
             return render_template("admin_login.html", form=form, incorrect_password=incorrect_password)
-        if form.validate_on_submit() and form.key.data == "secret&$LAI!key":
+        if form.validate_on_submit() and form.key.data == admin_key:
             upcoming_pa = upa()
             upcoming_pa_len = len(upcoming_pa)
             upcoming_ipa = upia()
