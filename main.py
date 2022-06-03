@@ -14,7 +14,6 @@ from wtforms import StringField, SubmitField, IntegerField, FloatField, DateFiel
 from wtforms.validators import DataRequired, EqualTo
 
 # FLASK SQLALCHEMY FOR DATABASE
-from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Column, Integer, String, Float
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
