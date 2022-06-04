@@ -623,11 +623,7 @@ nav {
                 font-size: 1rem;
         }
 
-        #title-button, #cta button {
-                font-size: 1rem !important;
-                padding: 10px 25px !imortant;
-                letter-spacing: 2px !important;
-        }
+
 
         #bridget .col-lg-6 h3, #press h2, #media-text h2, #fl-h2 {
                 letter-spacing: 1.5 !important;
