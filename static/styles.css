@@ -598,8 +598,17 @@ nav {
 
 
 
+        body {
+                padding-top: 60px;
+        }
+        nav {
+                height: 60px;
+        }
 
-
+        nav img{
+                height: 75%;
+                width: 75%;
+        }
 
 
         #header {
@@ -618,7 +627,7 @@ nav {
 
         #bridget .col-lg-6 h3, #press h2, #media-text h2, #fl-h2 {
                 letter-spacing: 1.5 !important;
-                font-size: 16px !important;
+                font-size: 20px !important;
         }
 
         #bridget p, #press-quote p, #media-text p, #cta p{
@@ -628,11 +637,15 @@ nav {
         #section-2 #bridget img {
                 min-width: 300px;
                 width: 100%;
-                height: 250px;
+                height: 200px;
         }
 
-        #section-2 #bridget button {
-                margin-bottom: 35px;
+        #section-2 #bridget button, #featured-listings button {
+                background-color: rgba(0,0,0,0);
+                padding: 10px 25px;
+                border: 2px solid #AC8F08;
+                letter-spacing: 1px;
+                font-size: 16px
         }
 
         #section-2 #press section {
@@ -677,17 +690,43 @@ nav {
                 margin-right: 10px;
         }
 
+        .fl-div h2 {
+                letter-spacing: 1px;
+                font-size: 1rem;
+        }
+
+        .fl-div p {
+                font-size: 12px;
+        }
+
+        #stats h2 {
+                font-size: 1rem;
+        }
+
+        #stats p {
+                font-size: 12px;
+        }
+
         #cta {
                 padding: 6% 14%;
         }
 
         #cta h2 {
                 letter-spacing: 4px;
-                font-size: 1.5rem;
+                font-size: 1rem;
+        }
+
+        #img-slide-cta h3 {
+                letter-spacing: 1px;
+                font-size: 16pxrem;
         }
 
 
         #img-slide .img-slide-img {
                 height: 100px;
+        }
+
+        footer p {
+                font-size: 12px;
         }
 }
