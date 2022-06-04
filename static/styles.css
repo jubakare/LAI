@@ -593,3 +593,79 @@ nav {
                 display: none;
         }
 }
+
+@media (max-width: 480px) {
+        #header {
+                font-size: 2.5rem;
+        }
+
+        #sub-header {
+                font-size: 0.875rem;
+        }
+
+        #title-button {
+                font-size: 0.5rem;
+                padding: 15px 20px;
+                font-weight: 600;
+        }
+
+        #section-2 #bridget img {
+                min-width: 350px;
+                width: 100%;
+        }
+
+        #section-2 #bridget button {
+                margin-bottom: 35px;
+        }
+
+        #section-2 #press section {
+                height: 130px;
+        }
+
+        #section-2 #media {
+                text-align: center;
+                padding: 70px 0 0 0;
+                padding-left: 3%;
+                padding-right: 3%;
+        }
+
+        #section-2 #media .onq-youtube-player {
+                left: 0;
+                margin: auto;
+                max-width: 90% !important;
+                height: 280px;
+                margin-bottom: 25px !important;
+        }
+
+        #section-2 #media #media-text {
+        border: none;
+        padding: 0 50px;
+        text-align: center;
+
+        }
+
+        #media-buttons {
+                display: inline-block;
+        }
+
+        #cta {
+                padding: 6% 14%;
+        }
+
+        #cta h2 {
+                letter-spacing: 4px;
+                font-size: 1.5rem;
+        }
+
+        #stats h2 {
+                font-size: 1.0rem;
+        }
+
+        #stats p {
+                font-size: 0.5rem;
+        }
+
+        #img-slide .img-slide-img {
+                height: 150px;
+        }
+}
