@@ -497,10 +497,6 @@ nav {
 
 @media (max-width: 991px) {
 
-        .navbar-brand img {
-                width: 75%;
-                height: 75%;
-        }
 
         .navbar-nav {
                 margin: auto;
@@ -508,21 +504,21 @@ nav {
         }
 
         #header {
-                font-size: 2.5rem;
+                font-size: 3.5rem;
         }
 
         #sub-header {
-                font-size: 0.75rem;
+                font-size: 1.25rem;
         }
 
         #title-button {
-                font-size: 0.5rem;
+                font-size: 0.875rem;
                 padding: 15px 20px;
                 font-weight: 600;
         }
 
         #section-2 #bridget img {
-                min-width: 350px;
+                min-width: 450px;
                 width: 100%;
         }
 
@@ -544,7 +540,7 @@ nav {
         #section-2 #media .onq-youtube-player {
                 left: 0;
                 margin: auto;
-                max-width: 70% !important;
+                max-width: 90% !important;
                 height: 280px;
                 margin-bottom: 25px !important;
         }
@@ -566,15 +562,15 @@ nav {
 
         #cta h2 {
                 letter-spacing: 4px;
-                font-size: 1.5rem;
+                font-size: 2.25rem;
         }
 
         #stats h2 {
-                font-size: 1.0rem;
+                font-size: 1.5rem;
         }
 
         #stats p {
-                font-size: 0.5rem;
+                font-size: 0.875rem;
         }
 
         #img-slide .img-slide-img {
