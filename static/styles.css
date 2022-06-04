@@ -655,7 +655,7 @@ nav {
 
         #section-2 #bridget button, #featured-listings button {
                 background-color: rgba(0,0,0,0);
-                padding: 10px 25px;
+                padding: 10px 15px;
                 border: 2px solid #AC8F08;
                 letter-spacing: 1px;
                 font-size: 1rem;
@@ -704,7 +704,7 @@ nav {
         }
 
         .fl-div h2 {
-                letter-spacing: 1px;
+                letter-spacing: 0;
                 font-size: 1rem;
         }
 
