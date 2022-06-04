@@ -603,14 +603,14 @@ nav {
 
 
         body {
-                padding-top: 80px;
+                padding-top: 90px;
         }
         nav {
-                height: 80px;
+                height: 90px;
         }
 
         nav img{
-                height: 80%;
+                height: 85px;
                 width: 80%;
                 vertical-align: center !important;
         }
@@ -626,7 +626,8 @@ nav {
 
         #title-button, #cta button {
                 font-size: 1rem !important;
-                padding: 10px 35px !important;
+                font-weight: 400;
+                padding: 5px 20px !important;
                 letter-spacing: 1.5 !important;
         }
 
