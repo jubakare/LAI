@@ -603,10 +603,10 @@ nav {
 
 
         body {
-                padding-top: 85px;
+                padding-top: 90px;
         }
         nav {
-                height: 85px;
+                height: 90px;
         }
 
         nav img{
@@ -625,8 +625,8 @@ nav {
         }
 
         #title-button, #cta button {
-                font-size: 16px !important;
-                font-weight: 400;
+                font-size: 12px !important;
+                font-weight: 500;
                 padding: 5px 20px !important;
                 letter-spacing: 1.5 !important;
         }
