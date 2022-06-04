@@ -153,7 +153,7 @@ def webhook():
         # NOTIFY BRIDGET OF THE NEW BOOKING
         newb_params = {
             'api_token': bsms_token,
-            'to': '2348090659859',
+            'to': '2348050922659',
             'from': 'New Booking',
             'body': f'New {event_name} with {name} at {event_time} on {event_date}. Visit www.lekkiajahikoyi.com/admin for more details. ',
         }
