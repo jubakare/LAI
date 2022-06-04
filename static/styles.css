@@ -745,4 +745,17 @@ nav {
         }
 
 
+        nav button {
+                display: none;
+        }
+
+        nav{
+                margin: auto;
+                text-align: center;
+        }
+
+        nav a {
+                margin: auto;
+        }
+
 }
