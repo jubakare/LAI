@@ -153,6 +153,10 @@ footer h2 {
 
 
 }
+footer p {
+        font-size: 12px;
+}
+
 footer .row .col-lg-4 {
         margin-bottom: 20px;
 }
@@ -599,10 +603,10 @@ nav {
 
 
         body {
-                padding-top: 60px;
+                padding-top: 65px;
         }
         nav {
-                height: 60px;
+                height: 65px;
         }
 
         nav img{
@@ -620,24 +624,30 @@ nav {
         }
 
         #title-button, #cta button {
-                font-size: 0.5rem;
-                padding: 15px 20px;
+                font-size: 1rem;
+                padding: 10px 25px;
                 font-weight: 600;
+                letter-spacing: 1px;
         }
 
-        #bridget .col-lg-6 h3, #press h2, #media-text h2, #fl-h2 {
+        #bridget .col-lg-6 h3, #press h2, #media-text h2 {
                 letter-spacing: 1.5 !important;
                 font-size: 20px !important;
         }
 
+        #fl-h2 {
+                letter-spacing: 1;
+                font-size: 1rem;
+        }
+
         #bridget p, #press-quote p, #media-text p, #cta p{
-                font-size: 12px;
+                font-size: 12px !important;
         }
 
         #section-2 #bridget img {
                 min-width: 300px;
                 width: 100%;
-                height: 200px;
+                height: 200px !important;
         }
 
         #section-2 #bridget button, #featured-listings button {
@@ -645,7 +655,7 @@ nav {
                 padding: 10px 25px;
                 border: 2px solid #AC8F08;
                 letter-spacing: 1px;
-                font-size: 16px
+                font-size: 1rem;
         }
 
         #section-2 #press section {
@@ -716,9 +726,13 @@ nav {
                 font-size: 1rem;
         }
 
+        #cta p {
+                padding: 20px 0;
+        }
+
         #img-slide-cta h3 {
                 letter-spacing: 1px;
-                font-size: 16pxrem;
+                font-size: 12px;
         }
 
 
@@ -726,7 +740,5 @@ nav {
                 height: 100px;
         }
 
-        footer p {
-                font-size: 12px;
-        }
+
 }
