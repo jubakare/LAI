@@ -1,7 +1,7 @@
 # FLASK AND BOOTSTRAP
 import sqlite3
 
-from flask import Flask, render_template, redirect, url_for, request
+from flak import Flask, render_template, redirect, url_for, request
 from flask_bootstrap import Bootstrap
 from datetime import datetime, timedelta
 import requests
