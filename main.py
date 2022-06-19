@@ -22,10 +22,10 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = os.getenv("SK")
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.logger.addHandler(logging.StreamHandler(sys.stdout))
 app.logger.setLevel(logging.ERROR)
-app.config['SECRET_KEY'] = os.getenv("89SEKurz93Ji5PtcA1hOtFnB3g46YyU2")
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 engine = create_engine('sqlite:///appointments-database.db', connect_args={'check_same_thread': False})
 Session = sessionmaker(bind=engine, autoflush=False)
 session = scoped_session(Session)
