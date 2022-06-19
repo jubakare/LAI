@@ -7,6 +7,7 @@ from datetime import datetime, timedelta
 import requests
 from operator import itemgetter
 import os
+from logging import FileHandler,WARNING
 
 # FLASK FORM THAT VALIDATES
 from flask_wtf import FlaskForm
@@ -20,6 +21,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 
 app = Flask(__name__, template_folder="template")
+file_handler = FileHandler('errorlog.txt')
+file_handler.setLevel(WARNING)
 app.config['SECRET_KEY'] = os.getenv("SK")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 engine = create_engine('sqlite:///appointments-database.db', connect_args={'check_same_thread': False})
