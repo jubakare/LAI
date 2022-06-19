@@ -20,7 +20,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 
-app = Flask(__name__, template_folder="template")
+app = Flask(__name__, template_folder="templates")
 file_handler = FileHandler('errorlog.txt')
 file_handler.setLevel(WARNING)
 app.config['SECRET_KEY'] = os.getenv("SK")
