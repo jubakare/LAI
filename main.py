@@ -19,7 +19,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="template")
 app.config['SECRET_KEY'] = os.getenv("SK")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 engine = create_engine('sqlite:///appointments-database.db', connect_args={'check_same_thread': False})
