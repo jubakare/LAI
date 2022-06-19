@@ -334,7 +334,7 @@ def admin():
     if request.method == "POST":
         if not form.validate_on_submit():
             return render_template('admin_login.html', form=form)
-        if form.validate_on_submit() and form.key.data != "secret&$LAI!key":
+        if form.validate_on_submit() and form.key.data != admin_key:
             incorrect_password = True
             return render_template("admin_login.html", form=form, incorrect_password=incorrect_password)
         if form.validate_on_submit() and form.key.data == admin_key:
