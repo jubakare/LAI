@@ -38,7 +38,7 @@ calendly_access_token = os.getenv("CAT")
 
 #Getting Organizational URI
 # header = {
-#     "authorization": f"Bearer {calendly_access_token}"
+#     "authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2F1dGguY2FsZW5kbHkuY29tIiwiaWF0IjoxNjU1NjYyMzE4LCJqdGkiOiJkYWZiNWU5MS0zMmViLTQ5MzgtOTU2OC0zNTlhMTc2MjNjMzYiLCJ1c2VyX3V1aWQiOiI2YjEwOTQyMy02NjI1LTQzZmYtYjZiMi03Y2ZkZTU2NzVhMTcifQ.1MaO-Gc-sMHaeEdEk0XgsEJgojn3NkW74G3jxIZlSoU"
 # }
 # response = requests.get("https://api.calendly.com/users/me", headers=header).json()
 # print(response)
